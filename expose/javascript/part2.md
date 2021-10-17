@@ -1,1 +1,12 @@
-
+1. It prints out 3. Since variables declared with var (like i) are function-scoped, it makes sense that there wasn't any error and 3 was printed out after going through the for loop before. 
+2. It prints out 150. Since variables declared with var (like discountedPrice) are function-scoped, it makes sense that there wasn't any error and 150 was printed out after going through the for loop before. 
+3. It prints out 150. Since variables declared with var (like finalPrice) are function-scoped, it makes sense that there wasn't any error and 150 was printed out after going through the for loop before. 
+4. This function returns discounted array, which holds the following values: [ 50, 100, 150 ]. These values are a result of the for loop before the return statement in the functioin. The discounted array values won't be printed as an output until we console.log() the result after calling the function. Also, since discounted array was declared with a var keyword, we know it would be accessible throughout the function.
+5. There was an error about how the variable i is not defined. The error is the result of using let to define i variable. These kind of variables are not accessible outside a specific block where they are defined at (which in this case is the for loop in the function). 
+6. We get a similar error for line 13 too. Since variables defined with let are block-spaced, we won't be able to see the value of discountedPrice is outside the block it's defined in (which in this case is the for loop in the function).
+7. It prints out 150 because this line is within the block where this variable finalPrice is defined in.
+8. It would return [ 50, 100, 150 ] but not print out anything to the screen since the output is not console-logged. This is returned because even though this array is defined using let, but this line is still within the block where the variable is defined. 
+9. There was an error about how the variable i is not defined. The error is the result of using let to define i variable. These kind of variables are not accessible outside a specific block where they are defined at (which in this case is the for loop in the function). 
+10. It prints out 3 since the length of the input array is 3.
+11. It would return [ 50, 100, 150 ] but not print out anything to the screen since the output is not console-logged. This is returned because this variable is defined using const and it's not reassigned within it's block.
+12. 
